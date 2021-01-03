@@ -57,7 +57,7 @@ public class ItemServiceFallback implements FallbackProvider {
             @Override
             public InputStream getBody() throws IOException {
             	log.info("fallback body");
-            	String s = JsonResult.err().msg("后台服务错误").toString();
+            	String s = JsonResult.err().msg("后台服务错误nmb").toString();
                 return new ByteArrayInputStream(s.getBytes("UTF-8"));
             }
 
